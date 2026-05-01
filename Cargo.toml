@@ -1,0 +1,19 @@
+[package]
+name = "goji-cli"
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/neiforfaen/goji"
+
+[[bin]]
+name = "goji"
+path = "src/main.rs"
+
+[dependencies]
+thiserror = "2.0"
+cliclack = "0.5.4"
+console = "0.16.3"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+
+[dev-dependencies]
+tempfile = "3"
